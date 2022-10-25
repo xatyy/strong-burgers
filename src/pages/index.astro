@@ -1,16 +1,22 @@
 ---
 import Layout from '../layouts/Layout.astro';
 import Card from '../components/Card.astro';
+import Header from '../components/Header.astro';
 ---
 
 
-<Layout title="Welcome to test.">
-    <header>
-        <nav class="container">
-            <p>Hello</p>
-        </nav>
-    </header>
-    <main>
+<Layout title="...">
+    <Header/>
+    <main class="font-clash">
+        <section class="relative bg-burger-accent mb-6 h-160 flex overflow-hidden">
+        <div class="absolute top-80 p-10">
+        <p class="text-burger-sauce text-5xl">Pâine 100% naturală.</p>
+
+        </div>
+        <img class="absolute -bottom-14 -right-24 min-w-fit h-[40rem] hidden md:flex" src="hero.png"/>
+        </section>
+        <section class="relative bg-burger-menu h-160 flex">
+        </section>
         <div class="p-10 max-w-sm mx-auto bg-white rounded-xl shadow-lg flex items-center space-x-4">
 	    </div>
     </main>

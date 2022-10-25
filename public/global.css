@@ -2,6 +2,14 @@
 @tailwind components;
 @tailwind utilities;
 
+@font-face {
+  font-family: "Clash";
+  src: url("./ClashGrotesk-Semibold.otf");
+}
+
 body {
-  background-color: #fff;
+  background-color: #B72515;
+  webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  overflow-wrap: break-word;
 }
