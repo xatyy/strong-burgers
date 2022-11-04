@@ -6,6 +6,8 @@ module.exports = {
       "burger-accent": "#B72515",
       "burger-sauce": "#F8F1C0",
       "burger-menu": "#FAE6D3",
+      "burger-about": "#F9C071",
+      "burger-burnt": "#212121",
     },
     extend: {
       height: {
@@ -13,17 +15,19 @@ module.exports = {
         160: "50rem",
       },
       fontFamily: {
-        clash: ["Clash", "Display"],
+        clash: ["Clash Display", "sans-serif"],
+      },
+      screens: {
+        phone: "700px",
+        sm: "1000px",
+        md: "1240px",
+        lg: "1400px",
+        xl: "1880px",
       },
     },
     container: {
       center: true,
       padding: "1rem",
-      /*screens: {
-        lg: "1124px",
-        xl: "1124px",
-        "2xl": "1124px",
-      },*/
     },
   },
   plugins: [],

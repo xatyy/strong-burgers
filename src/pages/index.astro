@@ -2,22 +2,120 @@
 import Layout from '../layouts/Layout.astro';
 import Card from '../components/Card.astro';
 import Header from '../components/Header.astro';
+import Product from '../components/Product.astro';
 ---
 
 
 <Layout title="...">
     <Header/>
-    <main class="font-clash">
-        <section class="relative bg-burger-accent mb-6 h-160 flex overflow-hidden">
-        <div class="absolute top-80 p-10">
-        <p class="text-burger-sauce text-5xl">Pâine 100% naturală.</p>
+    <main class="font-clash font-semibold">
+        <section class="relative bg-burger-accent h-[30rem] xl:h-[40rem] lg:h-[38rem] md:h-[38rem] sm:h-[38rem] phone:h-[38rem] overflow-hidden">
+<div class="relative">
+
+        
+            <img class=" shrink-0 mx-auto phone:h-max phone:scale-100 scale-[6] py-36  phone:top-40 phone:py-36" src="hero-reduced.jpeg">
+            <div class="absolute phone:left-0 phone:translate-x-0 left-1/2 -translate-x-1/2 top-80 p-24 phone:p-24 md:top-64 sm:top-56 phone:justify-start justify-center">
+                <p class="text-burger-sauce uppercase text-l phone:normal-case drop-shadow-2xl xl:text-7xl md:text-5xl sm:text-5xl">Pâine 100% naturală.</p>
+            </div>
 
         </div>
-        <img class="absolute -bottom-14 -right-24 min-w-fit h-[40rem] hidden md:flex" src="hero.png"/>
         </section>
-        <section class="relative bg-burger-menu h-160 flex">
+        <section id="menu" class="relative bg-burger-menu phone:h-[200rem] h-[250rem] phone:space-y-24 space-y-0">
+        <p class="text-burger-accent p-10 md:p-24 xl:text-6xl md:text-5xl text-3xl sm:p-24 sm:text-4xl">Meniu</p>
+           <div class="phone:space-y-24 space-y-40"> 
+                <Product id="1" 
+                title="Burger Vită" 
+                description="Chiflă Naturală, Carne de Vită, Brânză Chddar, Bacon, Roșii, Salată, Sos Burger"
+                price="23.99"
+                href="burger1.jpeg"/>
+               
+                <Product id="2"
+                title="Burger Crispy"
+                description="Chiflă Naturală, Carne de Pui Crispy, Brânză Cheddar, Roșii, Salată, Sos Burger"
+                price="19.99"
+                href="/burger2.jpeg"/> 
+
+                <Product id="3"
+                title="Cheeseburger"
+                description="Chiflă Naturală, Carne de Pui Crispy, Brânză Cheddar, Roșii, Salată, Sos Burger"
+                price="22.99"
+                href="burger3.jpeg"/> 
+
+                <Product id="4"
+                title="Burger Pui"
+                description="Chiflă Naturală, Carne de Pui, Brânză Cheddar, Roșii, Salată, Sos Burger"
+                price="19.99" href="burger4.jpeg"/>  
+
+                <Product id="5"
+                title="Sandwich"
+                description="Paine, Salam, a se completa..."
+                price="14.99" href="sandwich.jpeg"/>    
+
+                <Product id="6"
+                title="Sandwich"
+                description="Paine, Salam, a se completa..."
+                price="14.99" href="cubanez.jpeg"/>    
+              
+                <Product id="7"
+                title="Meniu Crispy"
+                description="Fasii din pui Crispy, Cartofi prajiti, sos"
+                price="14.99" href="crispy.jpeg"/>    
+
+                <Product id="8"
+                title="Meniu Nuggets"
+                description="Nuggets de pui, Cartofi prajiti, sos"
+                price="19.99" href="nuggets.jpeg"/>    
+
+
+
         </section>
-        <div class="p-10 max-w-sm mx-auto bg-white rounded-xl shadow-lg flex items-center space-x-4">
-	    </div>
+        <section id="about" class="phone:h-[50rem] h-[60rem] bg-burger-about">
+        <p class="text-burger-accent phone:p-24 p-10 phone:text-5xl text-3xl">Despre Noi</p>
+        <p class="text-burger-accent phone:p-24 p-10 phone:text-l text-xl">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam molestie libero nec lacus commodo fermentum. Curabitur vel libero vel magna tincidunt ultrices facilisis at sem. Praesent elit magna, scelerisque in mi quis, ultrices posuere est. Fusce quis dui sed ex placerat vehicula. Morbi facilisis ex sit amet lobortis blandit. In tempor metus sed fermentum iaculis. Curabitur eget tristique augue. In non nulla nec odio ultrices ornare. Aliquam at neque egestas, imperdiet mauris eu, dignissim lacus. Vivamus sed fringilla ante, sed feugiat magna. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nam rhoncus, dolor a porta luctus, neque arcu lacinia enim, a pharetra nunc dui quis eros.</p>
+        </section>
+        <section id="contact" class="h-52 phone:h-80 bg-burger-burnt">
+      
+        <p class="text-burger-sauce phone:text-5xl phone:p-24 p-10 text-3xl">Unde ne gasesti?</p>
+             <div id="map" style="width:100%;height:400px;"></div>
+<script>
+           
+let map;
+
+function initMap() {
+    const coord = { lat: 45.7702195, lng: 21.2103644 };
+    const infoWindow = new google.maps.InfoWindow();
+  map = new google.maps.Map(document.getElementById("map"), {
+    center: { lat: 45.7702195, lng: 21.2103644 },
+    zoom: 16,
+    disableDefaultUI: true,
+    mapId: 'acc00bfaca3f10b0'
+  });
+
+    new google.maps.Marker({
+        position: coord,
+        map,
+        title: "Strong Burgers",
+    });
+
+    marker.addListener("click", () => {
+      infoWindow.close();
+      infoWindow.setContent(marker.getTitle());
+      infoWindow.open(marker.getMap(), marker);
+    });
+}
+
+window.initMap = initMap;
+</script>
+            <script async
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAcZwm3fvnOWXbUrzO-15ScpfeQlsNcOug&callback=initMap">
+</script>
+        </section>
     </main>
 </Layout>
+
+    <style>
+.noisy {
+  background-image: url(data:image/png;base64,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);  
+} 
+
+</style>

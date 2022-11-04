@@ -2,13 +2,16 @@
 @tailwind components;
 @tailwind utilities;
 
-@font-face {
+@import url("http://fonts.cdnfonts.com/css/clash-display");
+
+/*@font-face {
   font-family: "Clash";
   src: url("./ClashGrotesk-Semibold.otf");
-}
+}*/
 
 body {
-  background-color: #B72515;
+  background-color: white;
+  background-color: #b72515;
   webkit-font-smoothing: antialiased;
   text-rendering: optimizeLegibility;
   overflow-wrap: break-word;
