@@ -6,76 +6,84 @@ import Product from '../components/Product.astro';
 ---
 
 
-<Layout title="...">
+<Layout title="Home">
     <Header/>
     <main class="font-clash font-semibold">
-        <section class="relative bg-burger-accent h-[30rem] xl:h-[40rem] lg:h-[38rem] md:h-[38rem] sm:h-[38rem] phone:h-[38rem] overflow-hidden">
+        <section class="relative bg-burger-accent h-[30rem] xl:h-[40rem] lg:h-[38rem] md:h-[38rem] sm:h-[38rem] phone:h-[24rem] overflow-hidden">
 <div class="relative">
 
         
-            <img class=" shrink-0 mx-auto phone:h-max phone:scale-100 scale-[6] py-36  phone:top-40 phone:py-36" src="hero-reduced.jpeg">
-            <div class="absolute phone:left-0 phone:translate-x-0 left-1/2 -translate-x-1/2 top-80 p-24 phone:p-24 md:top-64 sm:top-56 phone:justify-start justify-center">
-                <p class="text-burger-sauce uppercase text-l phone:normal-case drop-shadow-2xl xl:text-7xl md:text-5xl sm:text-5xl">Pâine 100% naturală.</p>
+            <img class=" shrink-0 mx-auto phone:h-max phone:scale-[1] sm:scale-100 lg:scale-100 scale-[6] 2xl:scale-100 xl:scale-100 md:scale-100 py-36  phone:top-40 phone:py-36" src="hero-reduced.jpeg">
+            <div class="absolute 2xl:transform-none 2xl:translate-x-0 2xl:left-0 xl:transform-none xl:translate-x-0 xl:left-0 lg:translate-x-0 lg:transform-none lg:left-0 md:transform-none md:translate-x-0 md:left-0 sm:translate-x-0 sm:transform-none sm:left-0 left-1/2 transform top-80 p-24 phone:p-24 md:top-64 sm:top-56 phone:justify-center justify-center phone:transform -translate-x-1/2">
+                <p class="text-burger-sauce phone:text-3xl uppercase md:normal-case 2xl:normal-case xl:normal-case lg:normal-case sm:normal-case text-l phone:normal-case drop-shadow-2xl xl:text-7xl md:text-5xl sm:text-5xl w-64 md:w-full 2xl:w-full lg:w-full sm:w-full phone:w-full">Pâine 100% naturală.</p>
             </div>
 
         </div>
         </section>
-        <section id="menu" class="relative bg-burger-menu phone:h-[200rem] h-[250rem] phone:space-y-24 space-y-0">
-        <p class="text-burger-accent p-10 md:p-24 xl:text-6xl md:text-5xl text-3xl sm:p-24 sm:text-4xl">Meniu</p>
-           <div class="phone:space-y-24 space-y-40"> 
+        <section id="menu" class="relative bg-burger-menu xl:h-[260rem] phone:h-[230rem] md:h-[250rem] lg:h-[270rem] 2xl:h-[300rem] h-[320rem] sm:h-[200rem] phone:space-y-24 space-y-0">
+        <p class="text-burger-accent p-10 2xl:p-24 md:p-24 xl:text-6xl md:text-5xl text-3xl sm:p-24 sm:text-4xl">Meniu</p>
+           <div class="phone:space-y-24 md:space-y-24 sm:space-y-32 2xl:space-y-48 space-y-52"> 
                 <Product id="1" 
                 title="Burger Vită" 
-                description="Chiflă Naturală, Carne de Vită, Brânză Chddar, Bacon, Roșii, Salată, Sos Burger"
-                price="23.99"
+                description="Chiflă naturală, Carne de Vită, Bacon, Brânză Cheddar, Roșii, Salată, Ceapă caramelizată, Castraveți murați, Sos Burger, Sos BBQ (500g)"
+                price="28.00"
                 href="burger1.jpeg"/>
                
                 <Product id="2"
                 title="Burger Crispy"
-                description="Chiflă Naturală, Carne de Pui Crispy, Brânză Cheddar, Roșii, Salată, Sos Burger"
-                price="19.99"
-                href="/burger2.jpeg"/> 
+                description="Chiflă naturală, Carne de Pui Crispy, Brânză Cheddar, Roșii, Salată, Ceapă, Sos Burger Crispy (350g)"
+                price="20.00"
+                href="/burger2.jpeg"/>
+
+                <Product id="9"
+                title="Burger Pulled Pork"
+                description="Chiflă naturală, Carne de Porc, Bacon, Brânză Cheddar, Castraveți Murați, Salată, Ceapă Roșie, Ceapa Caramelizată (430g)"
+                price="24.00"
+                href="/pulled.jpeg"/>
+
 
                 <Product id="3"
-                title="Cheeseburger"
-                description="Chiflă Naturală, Carne de Pui Crispy, Brânză Cheddar, Roșii, Salată, Sos Burger"
-                price="22.99"
+                title="Pleskavita"
+                description="Chiflă naturală, Carne de Vită + Porc, Brânză Cheddar, Roșii, Ceapă, Sos Pleskavita (400g)"
+                price="14.00"
                 href="burger3.jpeg"/> 
 
                 <Product id="4"
                 title="Burger Pui"
-                description="Chiflă Naturală, Carne de Pui, Brânză Cheddar, Roșii, Salată, Sos Burger"
-                price="19.99" href="burger4.jpeg"/>  
+                description="Chiflă naturală, Piept de Pui, Brânză Cheddar, Salată, Ceapă, Castraveți murați, Sos Burger (300g)"
+                price="23.00" href="burger4.jpeg"/>  
 
                 <Product id="5"
-                title="Sandwich"
-                description="Paine, Salam, a se completa..."
-                price="14.99" href="sandwich.jpeg"/>    
+                title="Sandwich Strong"
+                description="Pâine naturală, Salam, Salată, Brânză Cheddar, Castraveți murați, Ceapă (300g)"
+                price="13.00" href="sandwich.jpeg"/>    
 
                 <Product id="6"
-                title="Sandwich"
-                description="Paine, Salam, a se completa..."
-                price="14.99" href="cubanez.jpeg"/>    
+                title="Sandwich Cubanez"
+                description="Pâine naturală, Carne de Porc, Șuncă, Salam, Bacon, Brânză Cheddar, Castraveți Murați (380g)"
+                price="18.00" href="cubanez.jpeg"/>    
               
                 <Product id="7"
                 title="Meniu Crispy"
-                description="Fasii din pui Crispy, Cartofi prajiti, sos"
-                price="14.99" href="crispy.jpeg"/>    
+                description="Fașii din pui Crispy (4 buc), Cartofi prajiți, Sos"
+                price="20.00" href="crispy.jpeg"/>    
 
                 <Product id="8"
                 title="Meniu Nuggets"
-                description="Nuggets de pui, Cartofi prajiti, sos"
-                price="19.99" href="nuggets.jpeg"/>    
+                description="Nuggets de pui (7 buc), Cartofi prăjiți, Sos"
+                price="18.00" href="nuggets.jpeg"/>    
 
 
 
         </section>
-        <section id="about" class="phone:h-[50rem] h-[60rem] bg-burger-about">
-        <p class="text-burger-accent phone:p-24 p-10 phone:text-5xl text-3xl">Despre Noi</p>
-        <p class="text-burger-accent phone:p-24 p-10 phone:text-l text-xl">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam molestie libero nec lacus commodo fermentum. Curabitur vel libero vel magna tincidunt ultrices facilisis at sem. Praesent elit magna, scelerisque in mi quis, ultrices posuere est. Fusce quis dui sed ex placerat vehicula. Morbi facilisis ex sit amet lobortis blandit. In tempor metus sed fermentum iaculis. Curabitur eget tristique augue. In non nulla nec odio ultrices ornare. Aliquam at neque egestas, imperdiet mauris eu, dignissim lacus. Vivamus sed fringilla ante, sed feugiat magna. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nam rhoncus, dolor a porta luctus, neque arcu lacinia enim, a pharetra nunc dui quis eros.</p>
+        <section id="about" class="phone:h-[30rem] sm:h-[40rem]  md:h-[30rem] lg:h-[40rem] xl:h-[40rem] h-[60rem] bg-burger-about">
+        <p class="text-burger-accent phone:p-24 2xl:p-24 md:px-24 l:px-24 sm:p-24 xl:p-24 p-10 md:text-5xl 2xl:text-5xl phone:text-5xl text-3xl">Despre Noi</p>
+        <p class="text-burger-accent phone:p-24 p-10 md:text-xl md:p-24 xl:px-24 sm:px-24 2xl:px-24 2xl:text-xl phone:text-l xl:text-xl text-xl">Secțiune în lucru.</p>        <!-- <p class="text-burger-accent phone:p-24 p-10 md:text-xl md:p-24 xl:px-24 sm:px-24 2xl:px-24 2xl:text-xl phone:text-l xl:text-xl text-xl">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam molestie libero nec lacus commodo fermentum. Curabitur vel libero vel magna tincidunt ultrices facilisis at sem. Praesent elit magna, scelerisque in mi quis, ultrices posuere est. Fusce quis dui sed ex placerat vehicula. Morbi facilisis ex sit amet lobortis blandit. In tempor metus sed fermentum iaculis. Curabitur eget tristique augue. In non nulla nec odio ultrices ornare. Aliquam at neque egestas, imperdiet mauris eu, dignissim lacus. Vivamus sed fringilla ante, sed feugiat magna. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nam rhoncus, dolor a porta luctus, neque arcu lacinia enim, a pharetra nunc dui quis eros.</p>
+-->
         </section>
-        <section id="contact" class="h-52 phone:h-80 bg-burger-burnt">
+        <section id="contact" class="h-52 phone:h-80 2xl:h-80 xl:h-80 bg-burger-burnt">
       
-        <p class="text-burger-sauce phone:text-5xl phone:p-24 p-10 text-3xl">Unde ne gasesti?</p>
+        <p class="text-burger-sauce md:text-5xl 2xl:text-5xl xl:text-5xl lg:text-5xl phone:text-5xl 2xl:p-24 xl:p-24 phone:p-24 p-10 text-3xl">Unde ne găsești?</p>
              <div id="map" style="width:100%;height:400px;"></div>
 <script>
            
@@ -110,6 +118,7 @@ window.initMap = initMap;
     src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAcZwm3fvnOWXbUrzO-15ScpfeQlsNcOug&callback=initMap">
 </script>
         </section>
+            
     </main>
 </Layout>
 

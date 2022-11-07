@@ -18,11 +18,12 @@ module.exports = {
         clash: ["Clash Display", "sans-serif"],
       },
       screens: {
-        phone: "700px",
-        sm: "1000px",
-        md: "1240px",
-        lg: "1400px",
-        xl: "1880px",
+        /* phone: { min: "700px", max: "999px" },*/
+        sm: { min: "1000px", max: "1239px" },
+        md: { min: "1240px", max: "1919px" },
+        /* lg: { min: "1400px", max: "1880px" },
+        xl: { min: "1880px", max: "1920px" },*/
+        "2xl": { min: "1920px", max: "2048px" },
       },
     },
     container: {
