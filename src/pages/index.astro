@@ -106,7 +106,7 @@ function initMap() {
     });
 
     marker.addListener("click", () => {
-      window.location.href = this.url;
+      window.location.href = 'https://goo.gl/maps/ttvegRaSyUwZBeXE9';
     });
 }
 
@@ -115,8 +115,16 @@ window.initMap = initMap;
             <script async
     src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAcZwm3fvnOWXbUrzO-15ScpfeQlsNcOug&callback=initMap">
 </script>
+    
         </section>
-            
+        
+            <script async src="https://googletagmanager.com/gtag/js?id=G-9RJKVCN1LF"></script>
+            <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date())
+            gtag('config', 'G-9RJKVCN1LF')
+            </script>
     </main>
 </Layout>
 
