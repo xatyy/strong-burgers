@@ -1,6 +1,5 @@
 ---
 import Layout from '../layouts/Layout.astro';
-import Card from '../components/Card.astro';
 import Header from '../components/Header.astro';
 import Product from '../components/Product.astro';
 ---
@@ -14,8 +13,8 @@ import Product from '../components/Product.astro';
 
         
             <img class=" shrink-0 mx-auto phone:h-max phone:scale-[1] sm:scale-100 lg:scale-100 scale-[6] 2xl:scale-100 xl:scale-100 md:scale-100 py-36  phone:top-40 phone:py-36" src="hero-reduced.jpeg">
-            <div class="absolute 2xl:transform-none 2xl:translate-x-0 2xl:left-0 xl:transform-none xl:translate-x-0 xl:left-0 lg:translate-x-0 lg:transform-none lg:left-0 md:transform-none md:translate-x-0 md:left-0 sm:translate-x-0 sm:transform-none sm:left-0 left-1/2 transform top-80 p-24 phone:p-24 md:top-64 sm:top-56 phone:justify-center justify-center phone:transform -translate-x-1/2">
-                <p class="text-burger-sauce phone:text-3xl uppercase md:normal-case 2xl:normal-case xl:normal-case lg:normal-case sm:normal-case text-l phone:normal-case drop-shadow-2xl xl:text-7xl md:text-5xl sm:text-5xl w-64 md:w-full 2xl:w-full lg:w-full sm:w-full phone:w-full">Pâine 100% naturală.</p>
+            <div class="absolute 2xl:transform-none 2xl:translate-x-0 2xl:left-0 xl:transform-none xl:translate-x-0 xl:left-0 lg:translate-x-0 lg:transform-none lg:left-0 md:transform-none md:translate-x-0 phone:p-24 sm:p-24 md:p-24 lg:p-24 xl:p-24 md:left-0 sm:translate-x-0  sm:transform-none sm:left-0 left-1/2 transform 2xl:top-80 top-[27rem] 2xl:p-24 phone:p-24 md:top-64 sm:top-56 phone:justify-center phone:transform -translate-x-1/2">
+                <p class="text-burger-sauce phone:text-3xl uppercase md:normal-case 2xl:normal-case xl:normal-case lg:normal-case sm:normal-case text-l phone:normal-case drop-shadow-2xl xl:text-7xl md:text-5xl sm:text-5xl md:w-full 2xl:w-full lg:w-full sm:w-full phone:w-full">Pâine 100% naturală.</p>
             </div>
 
         </div>
@@ -78,7 +77,7 @@ import Product from '../components/Product.astro';
         </section>
         <section id="about" class="phone:h-[30rem] sm:h-[40rem]  md:h-[30rem] lg:h-[40rem] xl:h-[40rem] h-[60rem] bg-burger-about">
         <p class="text-burger-accent phone:p-24 2xl:p-24 md:px-24 l:px-24 sm:p-24 xl:p-24 p-10 md:text-5xl 2xl:text-5xl phone:text-5xl text-3xl">Despre Noi</p>
-        <p class="text-burger-accent phone:p-24 p-10 md:text-xl md:p-24 xl:px-24 sm:px-24 2xl:px-24 2xl:text-xl phone:text-l xl:text-xl text-xl">Secțiune în lucru.</p>        <!-- <p class="text-burger-accent phone:p-24 p-10 md:text-xl md:p-24 xl:px-24 sm:px-24 2xl:px-24 2xl:text-xl phone:text-l xl:text-xl text-xl">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam molestie libero nec lacus commodo fermentum. Curabitur vel libero vel magna tincidunt ultrices facilisis at sem. Praesent elit magna, scelerisque in mi quis, ultrices posuere est. Fusce quis dui sed ex placerat vehicula. Morbi facilisis ex sit amet lobortis blandit. In tempor metus sed fermentum iaculis. Curabitur eget tristique augue. In non nulla nec odio ultrices ornare. Aliquam at neque egestas, imperdiet mauris eu, dignissim lacus. Vivamus sed fringilla ante, sed feugiat magna. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nam rhoncus, dolor a porta luctus, neque arcu lacinia enim, a pharetra nunc dui quis eros.</p>
+        <p class="text-burger-accent phone:p-24 p-10 md:text-xl md:p-24 xl:px-24 sm:px-24 2xl:px-24 2xl:text-xl phone:text-l xl:text-xl text-xl">În anul 2021, din cauza unor probleme de sănătate, am decis să îmi urmez visul de a deveni bucătar. Întrucât am fost pasionat toată viața de gătit, am reușit să creez și să perfecționez propriile rețete culinare. Încurajat de familie și toate cunoștințele care au gustat preparatele mele, am ales să-mi dedic timpul gătitului. Așa am luat ființă noi, restaurantul mobil Strong Burgers. De la burgeri, la sandwich-uri, la pâinea făcută de casă, toate sunt gătite cu multă pasiune pentru comunitatea noastră.</p>        <!-- <p class="text-burger-accent phone:p-24 p-10 md:text-xl md:p-24 xl:px-24 sm:px-24 2xl:px-24 2xl:text-xl phone:text-l xl:text-xl text-xl">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam molestie libero nec lacus commodo fermentum. Curabitur vel libero vel magna tincidunt ultrices facilisis at sem. Praesent elit magna, scelerisque in mi quis, ultrices posuere est. Fusce quis dui sed ex placerat vehicula. Morbi facilisis ex sit amet lobortis blandit. In tempor metus sed fermentum iaculis. Curabitur eget tristique augue. In non nulla nec odio ultrices ornare. Aliquam at neque egestas, imperdiet mauris eu, dignissim lacus. Vivamus sed fringilla ante, sed feugiat magna. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nam rhoncus, dolor a porta luctus, neque arcu lacinia enim, a pharetra nunc dui quis eros.</p>
 -->
         </section>
         <section id="contact" class="h-52 phone:h-80 2xl:h-80 xl:h-80 bg-burger-burnt">
@@ -94,7 +93,7 @@ function initMap() {
     const infoWindow = new google.maps.InfoWindow();
   map = new google.maps.Map(document.getElementById("map"), {
     center: { lat: 45.7702195, lng: 21.2103644 },
-    zoom: 16,
+    zoom: 15,
     disableDefaultUI: true,
     mapId: 'acc00bfaca3f10b0'
   });
@@ -103,12 +102,11 @@ function initMap() {
         position: coord,
         map,
         title: "Strong Burgers",
+        url: 'https%3A%2F%2Fwww.google.com%2Fmaps%2Fplace%2F45%25C2%25B046%2712.8%2522N%2B21%25C2%25B012%2737.3%2522E%2F%4045.7702195%2C21.2081757%2C17z%2Fdata%3D!4m5!3m4!1s0x0%3A0x14cad3c7f5c0e3a5!8m2!3d45.7702195!4d21.2103644'
     });
 
     marker.addListener("click", () => {
-      infoWindow.close();
-      infoWindow.setContent(marker.getTitle());
-      infoWindow.open(marker.getMap(), marker);
+      window.location.href = this.url;
     });
 }
 
