@@ -9,14 +9,13 @@
     "start": "astro dev",
     "build": "astro build",
     "preview": "astro preview",
-    "astro": "astro",
-    "postbuild": "next-sitemap"
+    "astro": "astro"
   },
   "dependencies": {
     "@astrojs/react": "^1.2.0",
+    "@astrojs/sitemap": "^1.0.0",
     "@astrojs/tailwind": "^2.1.0",
     "astro": "^1.5.0",
-    "next-sitemap": "^3.1.32",
     "tailwindcss": "^3.1.8"
   }
 }
