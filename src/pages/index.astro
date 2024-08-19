@@ -19,10 +19,14 @@ import Product from '../components/Product.astro';
 
         </div>
         </section>
-        <section id="menu" class="relative bg-burger-menu xl:h-[260rem] phone:h-[250rem] md:h-[250rem] lg:h-[260rem] 2xl:h-[300rem] h-[300rem] sm:h-[200rem] phone:space-y-24 space-y-0">
+        <section id="menu" class="relative bg-burger-menu h-auto phone:space-y-24 space-y-0">
         <p class="text-burger-accent p-10 2xl:p-24 md:p-24 xl:text-6xl md:text-5xl text-3xl sm:p-24 sm:text-4xl">Meniu</p>
            <div class="phone:space-y-24 md:space-y-24 sm:space-y-32 2xl:space-y-48 space-y-52"> 
-                <Product id="1" 
+            <div id="restaumatic_menu_widget_wrapper">
+              <iframe allow="geolocation" src="https://strong-burger-s.skubacz.pl/ro/restauracje" width="100%" title="Meniu"></iframe>
+            </div>
+            <script type="text/javascript" src="https://strong-burger-s.skubacz.pl/ro/menu_widget.js" async></script>
+            <!--  <Product id="1" 
                 title="Burger Vită" 
                 description="Chiflă naturală, Carne de Vită, Bacon, Brânză Cheddar, Roșii, Salată, Ceapă caramelizată, Castraveți murați, Sos Burger, Sos BBQ (500g)"
                 price="35.00"
@@ -71,7 +75,7 @@ import Product from '../components/Product.astro';
                 <Product id="8"
                 title="Meniu Nuggets"
                 description="Nuggets de pui (7 buc), Cartofi prăjiți, Sos"
-                price="22.00" href="nuggets.jpeg"/>    
+                price="22.00" href="nuggets.jpeg"/>    -->
 
 
 
